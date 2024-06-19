@@ -15,9 +15,11 @@ html{
 }
 :root{
     --bg-color: #080808;
-    --second-bg-color:#001005;
+    --second-bg-color:#662e06;
+    --second-bg-color2:#251003;
     --text-color: white;
     --main-color:#ff9900;
+    --main-color2:#b91e1efe;
 }
 body{
     background: var(--bg-color);
@@ -76,8 +78,8 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
-    margin-top: 5rem    ;
+    gap: 10rem;
+    margin-top: 10rem    ;
 }
 .homecontent{
     display: flex;
@@ -102,7 +104,7 @@ section{
 }
 .homeimg img{
     width: 32vw;
-    height: 60vh;
+    height: 70vh;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out;
@@ -171,6 +173,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 10rem;
+    padding: 10rem;
     background: var(--second-bg-color);
 }
 .about-img img{
@@ -201,4 +204,86 @@ section{
 }
 ::-webkit-scrollbar-thumb{
     background: var(--main-color);
+}
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+}
+.services{
+    background: var(--bg-color);
+    color: #000;
+}
+.services h2{
+    color: var(--text-color);
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+.service-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color);
+    height: 600px;
+    
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+.service-box:hover{
+    background-color: var(--second-bg-color2);
+    color: var(--main-color2);
+    border: 5px solid var(--main-color2);
+    transform: scale(1.03);
+}
+.service-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+.service-info i{
+    font-size: 8rem;
+}
+.service-info h4{
+    font-size: 4rem;
+    margin: 2rem 0;
+    font-weight: 800;
+}
+.service-info p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+.contact{
+    background: var(--second-bg-color);
+}
+.contact h2{
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem 0;
+    text-align: center;
+}
+.contact form .input-box input,.contact form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    margin: 1.2rem;
 }
