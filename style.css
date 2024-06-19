@@ -17,7 +17,7 @@ html{
     --bg-color: #080808;
     --second-bg-color:#001005;
     --text-color: white;
-    --main-color:#00ff51;
+    --main-color:#d9ff00;
 }
 body{
     background: var(--bg-color);
@@ -175,6 +175,7 @@ section{
 }
 .about-img img{
     width: 32vw;
+    
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out;
